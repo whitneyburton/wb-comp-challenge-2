@@ -63,6 +63,7 @@ input {
 .icon2:hover,
 .icon3:hover {
   background-color: #009ffe;
+  cursor: pointer;
 }
 
 .fas:hover,
@@ -94,6 +95,31 @@ nav.nav {
   grid-column: 2/7;
   height: 180px;
   border-bottom: 2px solid #e4e6ea;
+}
+
+h1 {
+  color: #4e505f;
+  padding: 24px 0px 0px 39px;
+}
+
+.location-info {
+  padding-left: 39px;
+}
+
+.city-info,
+.fa-map-marker-alt,
+.fa-circle {
+  color: #8894a6;
+  display: inline-block;
+}
+
+.fa-circle {
+  font-size: 5px;
+}
+
+.preview-link {
+  color:#009ffe;
+  display: inline-block;
 }
 
 /* graphs and tables */
