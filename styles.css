@@ -8,7 +8,6 @@
 body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /*grid-gap: 2px;*/
 }
 
 /* left side bar */
@@ -68,11 +67,18 @@ li.login, li.cal, li.nav {
   font-size: 30px; 
 }
 
+.expand-section:hover {
+  background-color: #009ffe;
+  cursor: pointer;
+}
+
+.expand-section:hover .hover{
+  color: #fff;
+}
+
 .fa-user-circle:hover,
 .fa-calendar-plus:hover,
-.fa-th:hover,
-.fa-caret-left:hover,
-.fa-bars:hover {
+.fa-th:hover {
   color: #fff;
   background-color: #009ffe;
   cursor: pointer;
@@ -102,10 +108,9 @@ li.login, li.cal, li.nav {
 }
 
 /* page header and tabs */
-div.header-padding {
-  margin: 10px;
+.main-page-body {
+  /*margin: 10px;*/
   grid-column: 2/7;
-
 }
 
 header.header {
@@ -158,25 +163,30 @@ h2 {
   border-radius: 25px;
   height: 15px;
   padding: 8px;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 12px 0px 0px;
   font-size: 13px;
   width: 65px;
 }
 
-.fa-circle {
-  font-size: 15px;
+section.open {
+  padding: 8px 6px 8px 12px;
+}
+
+i.fa-circle {
+  font-size: 13px;
   color: #6fcf3b;
   padding-left: 5px;
 }
 
-.open-text {
+span.open-text {
   font-weight: 700;
   color: #8894a6;
+  font-size: 11px;
 }
 
-.bookmark,
-.edit,
-.delete {
+section.bookmark,
+section.edit,
+section.delete {
   border: 2px solid #e4e6ea;
   border-radius: 100%;
   height: 13px;
@@ -185,30 +195,33 @@ h2 {
   width: 13px;
 }
 
+i.fa-bookmark {
+  padding-left: 2px;
+}
+
+i.fa-pencil-art,
+i.fa-trash-alt {
+  padding-left: 1px;
+}
+
+/* nav tabs */
 .nav-tabs {
   list-style: none;
   color: #8894a6;
+  margin-left: 39px;
 }
 
-.summary-tab, .applicants-tab,
-.job-board-tab, .interviews-tab,
-.activity-tab, .broadcast-tab,
-.notifications-tab {
+.tab {
   font-weight: 700;
   font-size: 12px;
-  padding-right: 40px;
+  margin-right: 40px;
   padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
 }
 
-.summary-tab {
-  padding: 0px 40px 0px 40px;
-}
-
-.summary-tab:hover, .applicants-tab:hover,
-.job-board-tab:hover, .interviews-tab:hover,
-.activity-tab:hover, .broadcast-tab:hover,
-.notifications-tab:hover {
+.tab:hover {
   border-bottom: 3px solid #009ffe;
+  cursor: pointer;
 }
 
 
