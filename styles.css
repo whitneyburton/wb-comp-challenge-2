@@ -234,6 +234,71 @@ article.graphs {
   height: 360px;
 }
 
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #d6e3ec;
+  stroke-width: 2.2;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.teal .circle {
+  stroke: #00BEC4;
+}
+
+.circular-chart.blue .circle {
+  stroke: #009ffE;
+}
+
+.circular-chart.purple .circle {
+  stroke: #BD59AE;
+}
+
+.number {
+  fill: #666;
+  font-family: Roboto;
+  font-size: 8px;
+  text-anchor: middle;
+}
+
+.text {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 2.5px;
+  text-anchor: middle;
+}
+
+
+
 /* main job advertisement body */
 main.main {
   background-color: #ebf2f6;
