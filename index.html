@@ -13,7 +13,28 @@
 <body class="container"> 
 
   <aside class="left-sidebar">
-    Side Profile Nav Bar 
+    <div class="user-profile">
+      <img src="">
+      <span class="user-name">Whitney Burton
+      <i class="fas fa-chevron-down"></i></span>
+    </div>
+
+    <div class="main-sidebar"> 
+<!--       <ul class="sidebar"> Main
+        <li class="sidebar-item">Home</li>
+        <li class="sidebar-item">Jobs</li>
+        <li class="sidebar-item">Resumes</li>
+        <li class="sidebar-item">Tasks</li>
+        <li class="sidebar-item">Calendar</li>
+      </ul> -->
+    </div>
+    <div class="admin-sidebar">
+      
+    </div>
+    <div class="categories-sidebar">
+      
+    </div>
+
   </aside>
 
 <!-- header search bar -->
@@ -22,10 +43,10 @@
       <li class="expand-carrot"><i class="fas fa-caret-left hover"></i></li>
       <li class="expand-menu"><i class="fas fa-bars hover"></i></li>
     </ul>
-    <span id="searchbar">
+    <section id="searchbar">
       <i class="fas fa-search"></i>
       <input type=text placeholder="Search for a job, task, or resume">
-    </span> 
+    </section> 
     <ul class="login-cal-nav">
       <li class="login"><i class="far fa-user-circle"></i></li>
       <li class="cal"><i class="far fa-calendar-plus"></i></li>
@@ -37,24 +58,24 @@
   <section class="main-page-body">
     <header class="header">
         <article class="job-info">
-          <h2>Customer Service Representative</h2>
+          <h2>Software Developer</h2>
           <i class="fas fa-map-marker-alt"></i> 
-          <p class="city-info">San Francisco, CA 
+          <p class="city-info">Seattle, WA 
             <span class="bullet">&bull;</span></p>
           <a class="preview-link" href="">Preview this post</a>
         </article>
         <article class="nav-buttons">
-          <section class="job-buttons open">
+          <section class="job-buttons open hover">
             <i class="fas fa-circle"></i>
             <span class="button-text">OPEN</span>
           </section>
-          <section class="job-buttons bookmark">
+          <section class="job-buttons bookmark hover">
             <i class="fas fa-bookmark"></i>
           </section>
-          <section class="job-buttons edit">
+          <section class="job-buttons edit hover">
             <i class="fas fa-pencil-alt"></i>
           </section>
-          <section class="job-buttons delete">
+          <section class="job-buttons delete hover">
             <i class="fas fa-trash-alt"></i>
           </section>
         </article>
@@ -63,7 +84,7 @@
       <ul class="nav-tabs">
         <li class="tab">SUMMARY</li>
         <li class="tab">APPLICANTS</li>
-        <li class="tab">JOB BOARD</li>
+        <li class="tab">JOB&nbsp;BOARD</li>
         <li class="tab">INTERVIEWS</li>
         <li class="tab">ACTIVITY</li>
         <li class="tab">BROADCAST</li>
@@ -72,7 +93,10 @@
   </section>
 
   <article class="data-section">
-    <div class="all-graphs-only">
+  <div class="data-section-wrapper">
+    <div class="charts-and-button-wrapper">
+
+
       <div class="chart-wrapper">
         <div class="single-chart">
           <svg viewBox="0 0 36 36" class="circular-chart teal">
@@ -120,14 +144,23 @@
           </svg>
         </div>
       </div>
-      <img class="table" src="images/Screen Shot 2018-10-23 at 7.03.43 PM.png" alt="graph">
-    </div>
     <section class="total-views-button">
-      <span class="button-text">
+      <span class="button-text hover">
         TOTALS <span class="bullet">&bull;</span>
         Out of <strong>5,321</strong> views</span>
     </section>
 
+    </div>
+
+    <div class="table-wrapper">
+      <img class="table" src="images/applicants-graph.png" alt="graph">
+      <section class="apps-per-day-button">
+        <span class="button-text hover">
+          APPLICANTS/DAY</span>
+      </section>
+    </div>
+    
+  </div>
   </article>
 
   <main class="main">
