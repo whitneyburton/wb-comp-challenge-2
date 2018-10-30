@@ -277,6 +277,10 @@ h2 {
   margin: 0px 12px 0px 0px;
   width: 65px;
 }
+.open-button-text:hover {
+  color: #FFF;
+  transition-duration: .4s 
+}
 
 .fa-circle {
   font-size: 11px;
@@ -287,6 +291,12 @@ h2 {
   font-weight: 700;
   color: #8894a6;
   font-size: 11px;
+}
+
+.open-button-text {
+  font-weight: 700;
+  color: #8894a6;
+  font-size: 11px; 
 }
 
 section.bookmark,
@@ -573,10 +583,6 @@ button:hover {
   background-color: #007cbf
 }
 
-.media-section {
-
-}
-
 .media-links {
   margin: 22px 40px 0px 40px;
 }
@@ -607,7 +613,7 @@ button:hover {
 .media-button {
   background-color: #00bec4;
   font-weight: 500;
-  height: 30px;
+  height: 37px;
   font-size: 10px;
 }
 
@@ -646,11 +652,12 @@ button:hover {
   }
   .table {
     padding-left: 10%;
-  }
+    padding-top: 0px;
+}
   .nav-tabs {
     justify-content: none;
   }
-  .tab:nth-child(n+4):nth-child(-n+8) {
+  .tab:nth-child(n+6):nth-child(-n+8) {
     display: none;
   }
   .show-more-arrow {
@@ -673,7 +680,36 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 630px) { 
+@media screen and (max-width: 620px) {
+  .header {
+    display: block;
+  }
+  .nav-buttons {
+    margin: 7px 24px 0px 0px;
+  }
+  .tab:nth-child(n+4):nth-child(-n+5) {
+    display: none;
+  }
+  .tab:nth-child(n+6):nth-child(-n+8) {
+    display: none;
+  }
+
+@media screen and (max-width: 480px) {
+  .tab:nth-child(n+2):nth-child(-n+5) {
+    display: none;
+  }
+  .tab:nth-child(n+6):nth-child(-n+8) {
+    display: none;
+  }
+  .nav-tabs {
+    margin-top: 25px;
+  }
+  .open-button-text {
+    display: none;
+  }
+  .city-info, .bullet, .preview-link {
+    font-size: 13px;
+  }
 }
 
 
