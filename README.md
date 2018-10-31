@@ -6,6 +6,6 @@ spacing, layout, and utilzing a good choice of color palette and photos/icons.
 
 ---
 ##### Comp Photo 
-![comp](images/project-comp.jpg)
+http://frontend.turing.io/assets/images/static-comp-challenge-3.jpg
 ##### My Site 
 ![whitney's](images/staticComp2-screenshot.png)
