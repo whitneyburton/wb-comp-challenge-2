@@ -6,6 +6,6 @@ spacing, layout, and utilzing a good choice of color palette and photos/icons.
 
 ---
 ##### Comp Photo 
-![photo of static comp 1 comp](images/project-comp.jpg)
+![comp](images/project-comp.jpg)
 ##### My Site 
-![photo of my static comp](images/staticComp2-screenshot)
+![whitney's](images/staticComp2-screenshot.png)
